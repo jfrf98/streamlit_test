@@ -34,7 +34,7 @@ def toss_coin(n): #funcion que emula el lanzamiento de un moneda
     return mean
 
 number_of_trials = st.slider("¿Numero de intentos?", 1 , 1000, 10)
-start_botton = st.button("Ejecutar")
+start_button = st.button("Ejecutar")
 
 if start_button:
     st.write(f'Experimento con {number_of_trials} intentos en curso.')
