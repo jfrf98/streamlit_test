@@ -31,5 +31,6 @@ start_botton = st.button("Ejecutar")
 
 if start_botton:
     st.write(f"Experimento con {number_of_trials} intentos en curso.")
+    mean = toss_coin(number_of_trials)
 
 # st.write("Esta aplicacion aun no es funcional. En construccion.")
