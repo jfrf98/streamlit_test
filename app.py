@@ -24,7 +24,7 @@ def toss_coin(n): #funcion que emula el lanzamiento de un moneda
         chart.add_rows([mean])
         time.sleep(0.05)
 
-        return mean
+    return mean
 
 number_of_trials = st.slider("¿Numero de intentos?", 1 , 1000, 10)
 start_botton = st.button("Ejecutar")
