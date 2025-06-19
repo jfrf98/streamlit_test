@@ -3,6 +3,13 @@ from turtledemo.penrose import start
 import streamlit as st
 import scipy.stats
 import time
+import pandas as pd
+
+if "experiment_no" not in st.session_state:
+    st.session_state["expermien_no"] = 0
+
+if "df_experiment_results" not in st.session_state:
+    st.session_state["df_experiment_results"] = pd.DataFrame(columns=["no", "iteraciones", "media"])
 
 st.header("Lanzar una moneda")
 
